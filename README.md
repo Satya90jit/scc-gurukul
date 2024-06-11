@@ -1,4 +1,4 @@
-# PAF Web Assignment
+# CMS Project
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -14,14 +14,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Satya90jit/Paf-Web-Assignment.git
+   git clone https://github.com/Satya90jit/paf-project.git
 
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Paf-Web-Assignment
+   cd paf-project
 
    ```
 
@@ -47,15 +47,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## Deployed URL
 
-Check out the deployed version of this project on Vercel: https://paf-web-assignment.vercel.app/
-
-![Project Screenshot](./public/ScreenshotOne.png)
-
-![Project Screenshot](./public/ScreenshotTwo.png)
-
-## Responsive
-
-![Project Screenshot](./public/responsive.jpeg)
+Check out the deployed version of this project on Vercel: https://paf-project.vercel.app/
 
 ## Learn More
 
