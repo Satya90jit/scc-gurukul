@@ -40,7 +40,7 @@ const courseData = [
 
 const Home = () => {
   return (
-    <PublicLayout title="Math Wala">
+    <PublicLayout title="Maths Vala">
       <section className="mx-auto px-24 w-full">
         <div className="flex flex-row items-center gap-6 w-full">
           <SearchInput placeholder="Search for Batches" />
