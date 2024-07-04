@@ -1,59 +1,30 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "./Footer";
-import InnerBar from "./InnerBar";
-import InsideNav from "./InsideNav";
-import Navbar from "./Navbar";
+import AdminNavbar from "./AdminNavbar";
+import Drawer from "./Drawer";
 
 type Props = {
   children: React.ReactNode;
   title?: string;
-  description?: string;
-  navClass?: string | undefined;
-  insideNavClass?: string | undefined;
-  innerBarClass?: string | undefined;
-  ogImage?: string;
 };
 
-const PublicLayout = ({
-  children = <></>,
-  title = "",
-  description,
-  navClass,
-  insideNavClass,
-  innerBarClass,
-  ogImage = "https://paf-web-assignment.vercel.app/ap.jpg",
-}: Props) => {
+const PublicLayout = ({ children = <></>, title = "" }: Props) => {
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta
-          property="og:url"
-          content="https://paf-web-assignment.vercel.app"
-        />
+        <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
-        <meta
-          name="description"
-          content={
-            description
-              ? description
-              : "Acharya Prashant is dedicated to building a brighter future for you"
-          }
-        />
-        <meta
-          property="og:image"
-          content={
-            ogImage ? ogImage : "https://paf-web-assignment.vercel.app/ap.jpg"
-          }
-        />
       </Head>
-      <main>
-        <Navbar navClass={navClass} />
-        <InnerBar innerBarClass={innerBarClass} />
-        <InsideNav insideNavClass={insideNavClass} />
-        {children}
-        <Footer />
+      <main className="relative max-w-[1920px] w-full flex items-start justify-between gap-5 mx-auto p-5 bg-[url('/home/tutor_panel_bg.png')] bg-center bg-cover bg-no-repeat">
+        <Drawer />
+
+        <section className="w-full">
+          <AdminNavbar />
+          <article className="h-[calc(100vh-124px)] overflow-y-scroll">
+            {children}
+          </article>
+        </section>
       </main>
     </>
   );

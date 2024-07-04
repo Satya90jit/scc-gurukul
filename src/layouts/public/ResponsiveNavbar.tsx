@@ -1,4 +1,3 @@
-import { useAppContext } from "@/contexts";
 import { ArrowDropDownOutlined, VolunteerActivism } from "@mui/icons-material";
 import { Button, Collapse, Menu, MenuItem } from "@mui/material";
 import Link from "next/link";
@@ -37,7 +36,6 @@ const langArr = ["हिन्दी", "English"];
 const ResponsiveNavbar = () => {
   const [langAnchorEl, setLangAnchorEl] = useState(null);
   const [currentLangMenu, setCurrentLangMenu] = useState("");
-  const { selectedLanguage, changeLanguage } = useAppContext();
 
   const handleLangClick = (event: any) => {
     setLangAnchorEl(event?.currentTarget);
@@ -50,7 +48,6 @@ const ResponsiveNavbar = () => {
   };
 
   const handleLangSelect = (lang: any) => {
-    changeLanguage?.(lang);
     handleClose();
   };
   const langOpen = Boolean(langAnchorEl);
@@ -76,30 +73,7 @@ const ResponsiveNavbar = () => {
             <VolunteerActivism className="text-gray-200" />
             Donate
           </div>
-          <Button
-            className="text-white flex items-center capitalize"
-            onClick={handleLangClick}
-          >
-            <p className="border border-white px-1 rounded-md w-8">
-              {selectedLanguage === "English" ? "EN" : "HI"}
-            </p>
-            <ArrowDropDownOutlined
-              className={`transition-transform duration-200 ${
-                currentLangMenu === "language" ? "rotate-180" : "rotate-0"
-              }`}
-            />
-          </Button>
-          <Menu
-            anchorEl={langAnchorEl}
-            open={langOpen && currentLangMenu === "language"}
-            onClose={handleClose}
-          >
-            {langArr.map((lang, index) => (
-              <MenuItem key={index} onClick={() => handleLangSelect(lang)}>
-                {lang}
-              </MenuItem>
-            ))}
-          </Menu>
+
           <span onClick={() => setOpen(!open)} className="inline-block w-6">
             {open ? (
               <AiOutlineClose className="text-2xl text-white" />
