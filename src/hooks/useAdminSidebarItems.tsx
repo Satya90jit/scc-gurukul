@@ -29,13 +29,13 @@ const useAdminSidebarItems = () => {
     },
     {
       _id: "3",
-      title: "PW Centres",
+      title: "MV Centres",
       route: "/admin/pw-centres",
       icon: <LocationOnOutlined />,
     },
     {
       _id: "4",
-      title: "PW Store",
+      title: "MV Store",
       route: "/admin/pw-store",
       icon: <StorefrontOutlined />,
     },
@@ -80,12 +80,6 @@ const useAdminSidebarItems = () => {
       title: "Terms & Conditions",
       route: "/admin/terms-conditions",
       icon: <GavelOutlined />,
-    },
-    {
-      _id: "12",
-      title: "See Less",
-      route: "/admin/see-less",
-      icon: <VisibilityOffOutlined />,
     },
   ];
 };

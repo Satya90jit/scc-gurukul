@@ -41,14 +41,14 @@ const courseData = [
 const Home = () => {
   return (
     <PublicLayout title="Maths Vala">
-      <section className="mx-auto px-24 w-full">
-        <div className="flex flex-row items-center gap-6 w-full">
+      <section className="w-full">
+        <div className="flex flex-row items-center gap-4 w-full mt-7 mb-10">
           <SearchInput placeholder="Search for Batches" />
-          <button className="px-12 py-2.5 bg-violet-500 text-white font-semibold text-xl rounded-lg hover:bg-violet-600 common-transition">
+          <button className="px-12 py-2.5 bg-violet-500 text-white font-semibold text-md rounded-lg hover:bg-violet-600 common-transition">
             study
           </button>
         </div>
-        <aside className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <aside className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {courseData.map((course) => (
             <Card key={course.id} course={course} />
           ))}
@@ -84,9 +84,9 @@ const Card = ({ course }: any) => {
         <span className="text-gray-600">Ends: {course.endDate}</span>
       </div>
       <div className="flex justify-between items-center mb-4">
-        <p className="text-2xl font-semibold text-gray-800 flex items-center gap-2">
+        <p className="text-xl font-semibold text-gray-800 flex items-center gap-2">
           {course.discountedPrice}{" "}
-          <span className="line-through text-red-400 text-lg font-normal">
+          <span className="line-through text-red-400 text-sm font-normal">
             {course.price}
           </span>
         </p>
@@ -113,7 +113,7 @@ const Card = ({ course }: any) => {
 
 const SearchInput = ({ placeholder }: any) => {
   return (
-    <div className="bg-violet-300/30 px-4 py-3 rounded-lg flex items-center my-8 w-full">
+    <div className="bg-violet-300/30 px-4 py-3 rounded-lg flex items-center w-full">
       <SearchOutlined className="text-violet-600 mr-2" />
       <input
         type="text"

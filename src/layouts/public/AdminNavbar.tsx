@@ -34,7 +34,7 @@ const AdminNavbar = () => {
   return (
     <nav className="sticky top-5 z-[90] w-full h-16 flex items-center mb-5">
       <section className="w-full bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-xl py-1">
-        <div className="main-container w-full flex justify-between gap-4">
+        <div className="px-4 w-full flex justify-between gap-4">
           {/* <ResponsiveDrawer /> */}
           <div className="flex items-center text-md">
             <CalculateOutlined className="pr-2 text-violet-600 !text-2xl" />

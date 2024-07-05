@@ -33,7 +33,7 @@ const Drawer = () => {
               placement="top-end"
             >
               <div
-                className={`w-full group flex items-center justify-between px-4 py-3 text-gray-500 hover:text-white box-border rounded-lg  hover:bg-black transition-all duration-150 ease-in-out cursor-pointer 
+                className={`w-full group flex items-center justify-between px-4 py-2 text-gray-500 hover:text-white box-border rounded-lg  hover:bg-black transition-all duration-150 ease-in-out cursor-pointer 
                 `}
                 onClick={() => {
                   if (menuItem?.route) return router?.push(menuItem?.route);
