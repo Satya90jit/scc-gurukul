@@ -41,14 +41,14 @@ const courseData = [
 const Home = () => {
   return (
     <PublicLayout title="Maths Vala">
-      <section className="w-full">
+      <section className="w-full 2xl:main-container">
         <div className="flex flex-row items-center gap-4 w-full mt-7 mb-10">
           <SearchInput placeholder="Search for Batches" />
           <button className="px-12 py-2.5 bg-violet-500 text-white font-semibold text-md rounded-lg hover:bg-violet-600 common-transition">
             study
           </button>
         </div>
-        <aside className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <aside className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:gap-6 gap-4">
           {courseData.map((course) => (
             <Card key={course.id} course={course} />
           ))}

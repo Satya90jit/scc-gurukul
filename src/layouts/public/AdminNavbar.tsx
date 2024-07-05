@@ -10,6 +10,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
 import { useState } from "react";
+import ResponsiveDrawer from "./ResponsiveDrawer";
 
 const AdminNavbar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -34,13 +35,15 @@ const AdminNavbar = () => {
   return (
     <nav className="sticky top-5 z-[90] w-full h-16 flex items-center mb-5">
       <section className="w-full bg-white shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] rounded-xl py-1">
-        <div className="px-4 w-full flex justify-between gap-4">
-          {/* <ResponsiveDrawer /> */}
-          <div className="flex items-center text-md">
-            <CalculateOutlined className="pr-2 text-violet-600 !text-2xl" />
-            <span className="pr-1">Financial Investment Course</span>
-            <KeyboardDoubleArrowRight className="!text-lg text-violet-700" />
-          </div>
+        <div className="px-4 w-full flex justify-between items-center  gap-4">
+          <ResponsiveDrawer />
+          <aside className="hidden md:block">
+            <div className="flex items-center text-md">
+              <CalculateOutlined className="pr-2 text-violet-600 !text-2xl" />
+              <span className="pr-1">Financial Investment Course</span>
+              <KeyboardDoubleArrowRight className="!text-lg text-violet-700" />
+            </div>
+          </aside>
           <aside className="w-1/4 flex gap-5 items-center justify-end">
             <div className="group">
               <Button

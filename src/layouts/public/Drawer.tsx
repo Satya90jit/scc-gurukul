@@ -15,7 +15,7 @@ const Drawer = () => {
     >
       <div className="flex justify-center items-center gap-2 h-24">
         <img
-          src="main-logo.jpeg"
+          src="/main-logo.jpeg"
           alt="Math-Wala"
           className="w-10 cursor-pointer"
         />
