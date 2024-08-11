@@ -8,7 +8,7 @@ import {
 const courseData = [
   {
     id: 1,
-    title: "Algebra Basics",
+    title: "Algebra Basicsss",
     startDate: "20 May, 2024",
     endDate: "20 Jun, 2024",
     price: "₹ 7000",
