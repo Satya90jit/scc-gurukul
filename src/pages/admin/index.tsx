@@ -1,9 +1,5 @@
-import { PublicLayout } from "@/layouts";
-import {
-  SearchOutlined,
-  WhatsApp,
-  WhatshotOutlined,
-} from "@mui/icons-material";
+import { AdminLayout } from "@/layouts";
+import { SearchOutlined, WhatsApp } from "@mui/icons-material";
 
 const courseData = [
   {
@@ -40,7 +36,7 @@ const courseData = [
 
 const AdminHome = () => {
   return (
-    <PublicLayout title="Maths Vala">
+    <AdminLayout title="Maths Vala">
       <section className="w-full 2xl:main-container">
         <div className="flex flex-row items-center gap-4 w-full mt-7 mb-10">
           <SearchInput placeholder="Search for Batches" />
@@ -54,7 +50,7 @@ const AdminHome = () => {
           ))}
         </aside>
       </section>
-    </PublicLayout>
+    </AdminLayout>
   );
 };
 
