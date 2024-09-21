@@ -118,7 +118,7 @@ const Footer = () => {
   const text = "We're on a mission.";
   return (
     <footer className="w-full bg-[url-('/images/footer_bg.png')] bg-no-repeat bg-center bg-cover bg-[#171d24] pt-8 md:pt-16 2xl:pt-24 pb-4 md:pb-8 2xl:pb-12">
-      <section className="mx-auto px-[12rem] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-4 md:pb-8 2xl:pb-12">
+      <section className="mx-auto lg:px-[12rem] md:px-5 px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-4 md:pb-8 2xl:pb-12">
         <div className="flex flex-col gap-6">
           <motion.h2
             className="lg:h-[64px] md:h-[65px] h-[22px] text-xl md:text-2xl lg:text-3xl capitalize tracking-wide font-bold text-white"
@@ -202,7 +202,7 @@ const Footer = () => {
           </div>
         ))}
       </section>
-      <section className="mx-auto px-[12rem]">
+      <section className="mx-auto lg:px-[12rem] md:px-5 px-4 ">
         <div className="border-t border-white flex flex-col items-center justify-between text-center lg:flex-row gap-4 pt-4 md:pt-8 2xl:pt-12">
           <p className="text-white">
             © {new Date().getFullYear()} SCC Gurukul. All Rights Reserved.

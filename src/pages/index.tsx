@@ -20,7 +20,7 @@ const Home = () => {
         </div>
       ) : (
         <section className="flex justify-center items-center w-full h-screen">
-          <div className="lg:text-4xl text-3xl font-semibold text-blue-900">
+          <div className="lg:text-4xl text-2xl break-words font-semibold text-blue-900">
             PAGE UNDER MAINTENANCE
           </div>
         </section>

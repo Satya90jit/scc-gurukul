@@ -17,7 +17,7 @@ export interface INavArr {
 const PublicNavbar = () => {
   return (
     <nav className="w-full bg-white shadow sticky top-0 z-[999]">
-      <section className="hidden mx-auto px-[12rem] lg:flex items-center justify-between gap-4">
+      <section className="hidden mx-auto lg:px-[12rem] lg:flex items-center justify-between gap-4">
         <div className="flex items-center gap-10">
           <Link href="/">
             <img
